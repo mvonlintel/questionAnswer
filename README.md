@@ -8,9 +8,14 @@ nodejs - https://nodejs.org/en/download/
 
 ## Setup Instructions
 
+### Install package dependencies.
 `> npm install `
 
+### Compile app and start local webserver for testing and debugging.
 `> npm start `
+
+### Production build of app to '\dist' folder.<br/>
+`> npm run bulid`
 
 See package.json for more scripts.
 
