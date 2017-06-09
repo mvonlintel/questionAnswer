@@ -36,7 +36,7 @@ class EditQuestionPage extends React.Component {
     }
 
     saveQuestion() {
-        this.state.loading = true;
+        this.setState({loading: true});
         this.props.actions.updateQuestion(this.state.question);
         this.context.router.push('/home');
         toastr.success("Question saved success!")

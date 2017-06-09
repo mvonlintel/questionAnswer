@@ -18,9 +18,9 @@ const QuestionList = ({questions, onDelete}) => {
     )
 }
 
-QuestionList.proptypes = {
+QuestionList.propTypes = {
     questions: PropTypes.array.isRequired,
-    onDelete: PropTypes.function
+    onDelete: PropTypes.func
 }
 
 export default QuestionList;

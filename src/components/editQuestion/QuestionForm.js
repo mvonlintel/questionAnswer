@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import TextInput from '../common/TextInput';
 
-var QuestionForm = ({question, onChange, onSave, errors, loading}) => {
+const QuestionForm = ({question, onChange, onSave, errors, loading}) => {
     return (
         <div>
             <input type="hidden" name="id" value={question.id} />
@@ -11,6 +11,14 @@ var QuestionForm = ({question, onChange, onSave, errors, loading}) => {
             <input type="submit" className="btn btn-primary" value={loading ? "Saving..." : "Save"} onClick={onSave} /> 
         </div>
     );
+}
+
+QuestionForm.propTypes = {
+    question: PropTypes.object,
+    onChange: PropTypes.func,
+    onSave: PropTypes.onSave,
+    errors: PropTypes.array,
+    loading: PropTypes.bool
 }
 
 export default QuestionForm;

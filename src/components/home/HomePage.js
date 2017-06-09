@@ -28,7 +28,9 @@ class HomePage extends React.Component {
 }
 
 HomePage.propTypes = {
-    questions: PropTypes.array.isRequired
+    questions: PropTypes.array.isRequired,
+    actions: PropTypes.object,
+    deleteQuestion: PropTypes.func
 };
 
 function mapStateToProps(state, ownProps){
