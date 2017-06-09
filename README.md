@@ -14,3 +14,4 @@ nodejs - https://nodejs.org/en/download/
 
 See package.json for more scripts.
 
+Credit to https://github.com/coryhouse/pluralsight-redux-starter for project setup.
